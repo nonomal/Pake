@@ -4,10 +4,10 @@
 
 ## Branch Management
 
-```txt
-master
- ↑
-dev         <--- Develop/PR
+```mermaid
+graph LR
+    b_dev(dev) --> b_master(master);
+    contributions([Develop / Pull requests]) -.-> b_dev;
 ```
 
 - `dev` branch
@@ -16,10 +16,6 @@ dev         <--- Develop/PR
 - `master` branch
   - `master` is the release branch, we will make tag and publish version on this branch.
   - If it is a document modification, it can be submitted to this branch.
-
-## Commit Log
-
-please use <https://github.com/tw93/cz-emoji-chinese>
 
 ## More
 
